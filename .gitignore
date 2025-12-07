@@ -1,0 +1,42 @@
+# ----- Python -----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (optional - keep raw data out of repo)
+data/raw/
+data/interim/
+data/processed/
+
+# Ignore Kaggle API token if used
+kaggle.json
+
+# ----- VS Code -----
+.vscode/
+.history/
+
+# ----- OS Files -----
+.DS_Store
+Thumbs.db
+
+# ----- Build / Distribution -----
+build/
+dist/
+*.spec
+
+# ----- Cache -----
+.cache/
+pytest_cache/
