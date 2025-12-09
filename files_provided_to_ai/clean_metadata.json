@@ -1,0 +1,59 @@
+{
+    "Pclass": [
+        1,
+        2,
+        3
+    ],
+    "Sex": [
+        "female",
+        "male"
+    ],
+    "Embarked": [
+        "C",
+        "Q",
+        "S"
+    ],
+    "Title": [
+        "Master",
+        "Miss",
+        "Mr",
+        "Mrs",
+        "Rare"
+    ],
+    "AgeMissing": [
+        0,
+        1
+    ],
+    "TicketPrefix": [
+        "A",
+        "C",
+        "CA",
+        "NONE",
+        "OTHER",
+        "PC",
+        "S",
+        "SC",
+        "SOTON",
+        "STON",
+        "W"
+    ],
+    "FareMissing": [
+        0,
+        1
+    ],
+    "CabinKnown": [
+        0,
+        1
+    ],
+    "CabinDeck": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "T",
+        "Unknown"
+    ]
+}
