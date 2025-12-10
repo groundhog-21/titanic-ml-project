@@ -1,125 +1,88 @@
-# 🚢 Titanic - Machine Learning from Disaster
+# 🚀 Spaceship Titanic — Machine Learning Project
 
-A clean, modular machine learning project built locally using **Python 3.12**, **VS Code**, and **GitHub**, using the classic Kaggle Titanic dataset.  
-This repository is structured for reproducibility, extendability, and experimentation with different ML models.
+This project contains a complete machine learning workflow for the **Kaggle Spaceship Titanic competition**, including data exploration, preprocessing, feature engineering, modeling, and generating leaderboard submissions.
 
-## 📁 Project Structure
+---
+
+## 📌 Competition Link  
+https://www.kaggle.com/competitions/spaceship-titanic
+
+---
+
+## 📂 Project Structure
 
 ```
-titanic-ml-project/
-│
-├── .venv/                     # Local virtual environment (not tracked in Git)
+spaceship-titanic-ml-project/
 │
 ├── data/
-│   └── raw/                   # Kaggle dataset (ignored by Git)
-│       ├── train.csv
-│       ├── test.csv
-│       └── gender_submission.csv
+│   ├── raw/          # Original Kaggle data (not tracked in Git)
+│   ├── interim/      # Intermediate cleaned data
+│   └── processed/    # Final ML-ready datasets
 │
-├── files_provided_to_ai/      # Reference PDFs used to guide model design
+├── notebooks/        # Jupyter notebooks (EDA, modeling, etc.)
 │
-├── notebooks/
-│   └── eda.ipynb              # Exploratory data analysis notebook
+├── src/
+│   ├── data/         # Data loading & cleaning scripts
+│   ├── features/     # Feature engineering modules
+│   ├── models/       # Training and evaluation pipelines
+│   └── visualization/ # Plotting utilities
 │
-├── src/                       # Source code for the ML pipeline
+├── submissions/      # Kaggle submission files
 │
-├── .gitignore
-├── README.md
-└── requirements.txt
+├── requirements.txt  # Project dependencies
+├── .gitignore        # Files excluded from version control
+└── README.md         # Project documentation (this file)
 ```
 
-## 🔧 Environment Setup
+---
 
-This project uses **Python 3.12.10** and a local virtual environment.
+## 🧪 Environment Setup
 
-### 1. Create the virtual environment
+Create and activate a Python 3.12 virtual environment:
 
-```powershell
+```bash
 py -3.12 -m venv .venv
-```
-
-### 2. Activate it
-
-```powershell
 .venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```powershell
 pip install -r requirements.txt
 ```
 
-### 4. Select interpreter in VS Code
-
-Open:
-
-**Ctrl + Shift + P → "Python: Select Interpreter" → `.venv/Scripts/python.exe`**
-
-## 📊 Data
-
-The dataset comes from the Kaggle competition:  
-**Titanic - Machine Learning from Disaster**
-
-It includes:  
-- `train.csv` — training data with labels  
-- `test.csv` — evaluation data  
-- `gender_submission.csv` — example submission  
-
-You must download the dataset manually from Kaggle and place it into:
-
-```
-data/raw/
-```
-
-## 🚀 Usage
-
-### Run EDA  
-Open the notebook:
-
-```
-notebooks/eda.ipynb
-```
-
-### Train a model (coming soon)
-
-Run:
+Launch Jupyter:
 
 ```bash
-python src/train_model.py
+jupyter lab
 ```
 
-### Generate predictions
+---
 
-```bash
-python src/predict.py
-```
+## 🎯 Goals
 
-A `submission.csv` file will be created, ready to upload to Kaggle.
+- Perform exploratory data analysis (EDA)
+- Clean and preprocess the dataset
+- Build feature engineering pipelines
+- Train baseline and advanced ML models
+- Perform hyperparameter tuning
+- Generate high‑quality Kaggle submissions
 
-## 🏆 Kaggle Competition Info
+---
 
-Kaggle Competition Page:  
-https://www.kaggle.com/c/titanic
+## 📈 Models to Explore
 
-Goal: Predict which passengers survived the Titanic disaster.  
-Metric: **Accuracy** (percentage of correct predictions).
+- Logistic Regression
+- Random Forests
+- Gradient Boosting Machines
+- XGBoost
+- LightGBM
+- CatBoost
+- Neural network approaches (optional)
 
-## 📌 Next Steps (Roadmap)
+---
 
-- Implement modular data preprocessing  
-- Add feature engineering (Title extraction, Family size, Deck, Ticket groups)  
-- Add GBDT models: CatBoost, LightGBM, XGBoost  
-- Add cross-validation pipeline  
-- Add Optuna for hyperparameter search  
-- Add stacking/ensembling  
-- Add agent-driven feature exploration (ChatGPT workflows)
+## 🏆 Objective
+
+Predict whether each passenger was transported to an alternate dimension during the Spaceship Titanic incident.
+
+---
 
 ## 📜 License
 
-This project follows Kaggle’s competition rules.  
-Dataset © Kaggle (subject to competition terms).
-
-## ✨ Author
-
-Created in 2025 as part of a full local ML workflow setup (VS Code + GitHub + ChatGPT Plus).
+MIT License
