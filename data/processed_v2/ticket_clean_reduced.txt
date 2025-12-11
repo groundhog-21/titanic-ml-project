@@ -1,0 +1,56 @@
+0         Ticket_clean_1601  1.505952  1.505952
+1       Ticket_clean_113781 -1.437233  1.437233
+2       Ticket_clean_347077  1.225096  1.225096
+3       Ticket_clean_367226  1.145047  1.145047
+6         Ticket_clean_2666  0.991907  0.991907
+7         Ticket_clean_2678 -0.982781  0.982781
+8       Ticket_clean_347742  0.939659  0.939659
+9   Ticket_clean_S W PP 752  0.931836  0.931836
+10      Ticket_clean_382652 -0.921584  0.921584
+12        Ticket_clean_2665 -0.876918  0.876918
+13        Ticket_clean_7598  0.872081  0.872081
+14       Ticket_clean_65306  0.870830  0.870830
+
+
+
+
+
+"Ticket_clean_1601"          (+1.505952)
+"Ticket_clean_113781"        (-1.437233)
+"Ticket_clean_347077"        (+1.225096)
+"Ticket_clean_367226"        (+1.145047)
+"Ticket_clean_2666"          (+0.991907)
+"Ticket_clean_2678"          (-0.982781)
+"Ticket_clean_347742"        (+0.939659)
+"Ticket_clean_S W PP 752"    (+0.931836)
+"Ticket_clean_382652"        (-0.921584)
+"Ticket_clean_2665"          (-0.876918)
+"Ticket_clean_7598"          (+0.872081)
+"Ticket_clean_65306"         (+0.870830)
+
+
+Top 15 features: feature coef abs_coef 
+0 Ticket_clean_1601 1.505952 1.505952 
+1 Ticket_clean_113781 -1.437233 1.437233 
+2 Ticket_clean_347077 1.225096 1.225096 
+3 Ticket_clean_367226 1.145047 1.145047 
+6 Ticket_clean_2666 0.991907 0.991907 
+7 Ticket_clean_2678 -0.982781 0.982781 
+8 Ticket_clean_347742 0.939659 0.939659 
+9 Ticket_clean_S W PP 752 0.931836 0.931836 
+10 Ticket_clean_382652 -0.921584 0.921584 
+12 Ticket_clean_2665 -0.876918 0.876918 
+13 Ticket_clean_7598 0.872081 0.872081 
+14 Ticket_clean_65306 0.870830 0.870830
+
+cols_to_drop = [
+    "AgeBand",
+    "Title_AgeBand",
+    "CabinDeck",
+    "Pclass_FareBand",
+    "FareBand",
+    "Sex_AgeBand",
+    "Embarked_Pclass",
+    "FareMissing",
+    "Parch",
+]
