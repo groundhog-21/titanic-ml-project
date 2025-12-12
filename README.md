@@ -1,88 +1,23 @@
-# 🚀 Spaceship Titanic — Machine Learning Project
+# Titanic — Machine Learning from Disaster
 
-This project contains a complete machine learning workflow for the **Kaggle Spaceship Titanic competition**, including data exploration, preprocessing, feature engineering, modeling, and generating leaderboard submissions.
+A focused, reproducible machine learning project for the Kaggle **Titanic** competition.
 
----
+**Goal:** Predict passenger survival.  
+**Emphasis:** Feature stability, reproducibility, and preserving high‑performing models.
 
-## 📌 Competition Link  
-https://www.kaggle.com/competitions/spaceship-titanic
+## Highlights
+- Clean, minimal feature sets outperform over‑engineered pipelines
+- Random Forest baselines with careful tuning are highly competitive
+- Exceptional models are preserved as reproducible artifacts (“gold models”)
 
----
+## Structure
+- `data/` — raw, interim, and processed datasets  
+- `notebooks/` — EDA, feature engineering, modeling, error analysis  
+- `models/` — experiments and frozen high‑performing models  
+- `submissions/` — Kaggle submission files  
 
-## 📂 Project Structure
+## Environment
+Python 3.12, local development, Jupyter notebooks.
 
-```
-spaceship-titanic-ml-project/
-│
-├── data/
-│   ├── raw/          # Original Kaggle data (not tracked in Git)
-│   ├── interim/      # Intermediate cleaned data
-│   └── processed/    # Final ML-ready datasets
-│
-├── notebooks/        # Jupyter notebooks (EDA, modeling, etc.)
-│
-├── src/
-│   ├── data/         # Data loading & cleaning scripts
-│   ├── features/     # Feature engineering modules
-│   ├── models/       # Training and evaluation pipelines
-│   └── visualization/ # Plotting utilities
-│
-├── submissions/      # Kaggle submission files
-│
-├── requirements.txt  # Project dependencies
-├── .gitignore        # Files excluded from version control
-└── README.md         # Project documentation (this file)
-```
-
----
-
-## 🧪 Environment Setup
-
-Create and activate a Python 3.12 virtual environment:
-
-```bash
-py -3.12 -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-Launch Jupyter:
-
-```bash
-jupyter lab
-```
-
----
-
-## 🎯 Goals
-
-- Perform exploratory data analysis (EDA)
-- Clean and preprocess the dataset
-- Build feature engineering pipelines
-- Train baseline and advanced ML models
-- Perform hyperparameter tuning
-- Generate high‑quality Kaggle submissions
-
----
-
-## 📈 Models to Explore
-
-- Logistic Regression
-- Random Forests
-- Gradient Boosting Machines
-- XGBoost
-- LightGBM
-- CatBoost
-- Neural network approaches (optional)
-
----
-
-## 🏆 Objective
-
-Predict whether each passenger was transported to an alternate dimension during the Spaceship Titanic incident.
-
----
-
-## 📜 License
-
-MIT License
+## Competition
+https://www.kaggle.com/competitions/titanic
