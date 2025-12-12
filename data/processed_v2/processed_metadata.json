@@ -15,5 +15,16 @@
         "Mrs",
         "Officer",
         "Royalty"
+    ],
+    "CabinDeck": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "T",
+        "Unknown"
     ]
 }
